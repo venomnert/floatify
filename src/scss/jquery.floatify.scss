@@ -1,0 +1,29 @@
+.floatify {
+    position: relative;
+    .floatify__label {
+        cursor: text;
+        user-select: none;
+        position: absolute;
+        top: 7px;
+        opacity: 0;
+        font-size: .9em;
+        visibility: hidden;
+        transition: opacity .4s;
+        color: #0F7BC6;
+    }
+    .floatify__input {
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        padding: 14px 10px;
+        height: auto;
+    }
+    &.floatify__active {
+        .floatify__label {
+            opacity: 1;
+            visibility: visible;
+        }
+        .floatify__input {
+            padding: 24px 10px 4px;
+        }
+    }
+}

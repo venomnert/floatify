@@ -1,0 +1,34 @@
+{
+  "name": "floatify",
+  "version": "0.0.1",
+  "description": "A light-weight floating form label plugin for jQuery",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:sass & npm run build:autoprefixer & npm run build:es6 & npm run build:js",
+    "build:sass": "node-sass src/scss/jquery.floatify.scss -o dist/",
+    "build:autoprefixer": "postcss dist/*.css -u autoprefixer -r --no-map",
+    "build:js": "uglifyjs --source-map -o dist/jquery.floatify.min.js -- dist/jquery.floatify.js",
+    "build:es6": "babel src/js -s -o dist/jquery.floatify.js --presets=env",
+    "babel:watch": "babel src/js -w -s -o dist/jquery.floatify.js --presets=env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalify/floatify.git"
+  },
+  "homepage": "https://github.com/digitalify/floatify#readme",
+  "bugs": {
+    "url": "https://github.com/digitalify/floatify/issues"
+  },
+  "keywords": [],
+  "author": "Mehdi Dehghani",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jquery": "^3.3.4",
+    "autoprefixer": "^8.6.4",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.9.1",
+    "postcss": "^7.0.2",
+    "postcss-cli": "^6.0.0",
+    "uglify-js": "^3.4.6"
+  }
+}
