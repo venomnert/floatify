@@ -23,7 +23,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             this.el = el;
             this.$el = $(el);
 
-            if (/submit|checkbox|radio/.test(this.$el.attr('type'))) return;
+            if (/submit|checkbox|radio|hidden/.test(this.$el.attr('type'))) return;
 
             this.config = $.extend({}, defaults, config);
 
