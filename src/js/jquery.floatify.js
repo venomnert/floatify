@@ -31,6 +31,8 @@
         updateHTML() {
             let ph = this.$el.attr('placeholder');
 
+            if (typeof ph === 'undefined') return;
+
             // add id to input, if not exists
             if (typeof this.$el.attr('id') === 'undefined') this.$el.attr('id', ph.toLowerCase().replace(/ /g, '-'));
 
