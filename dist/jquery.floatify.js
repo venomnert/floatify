@@ -9,9 +9,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 (function ($, window, document, undefined) {
     var pluginName = 'floatify',
         p = {},
-
-    // -- Globals (shared across all plugin instances)
-    defaults = {
+        defaults = {
         position: 'left',
         hGap: null
     };

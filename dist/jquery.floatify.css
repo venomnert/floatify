@@ -9,9 +9,10 @@
     position: absolute;
     top: 7px;
     opacity: 0;
-    font-size: .9em;
+    font-size: .8em;
     visibility: hidden;
     transition: opacity .4s;
+    will-change: opacity;
     color: #0F7BC6; }
   .floatify .floatify__input {
     border: 1px solid #ddd;
