@@ -42,4 +42,4 @@ $('input').floatify({
 
 ## License
 
-https://github.com/digitalify/floatify/blob/master/LICENSE
+[MIT](https://github.com/digitalify/floatify/blob/master/LICENSE)
