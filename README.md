@@ -7,7 +7,7 @@ Based on a UI concept by Matt D. Smith.
 
 Include `jquery.floatify.js` and `jquery.floatify.css` to your page
 
-```
+```html
 <link rel="stylesheet" href="jquery.floatify.css" />
 
 <!-- checkify is jQuery plugin, so... -->
