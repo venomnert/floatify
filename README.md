@@ -33,7 +33,7 @@ $('input').floatify({
 
 ## Available options
 
-```json
+```js
 {
   position: 'left', // can be left or right
   hGap: null // horizontal gap, can be any number or even string like '10px'
