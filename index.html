@@ -13,6 +13,11 @@
 
     <link href="https://rawgit.com/pietromenna/jekyll-cayman-theme/master/css/cayman.css" rel="stylesheet">
     <link href="https://rawgit.com/digitalify/floatify/master/dist/jquery.floatify.css" rel="stylesheet">
+    <style>
+        body{
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,7 +32,9 @@
     <script src='https://rawgit.com/digitalify/floatify/master/dist/jquery.floatify.js'></script>
 
     <script>
-        $('input').floatify();
+        $('input').floatify({
+            hGap: 10
+        });
     </script>
 </body>
 
