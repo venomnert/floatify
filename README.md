@@ -3,12 +3,14 @@ A light-weight floating form label plugin for jQuery
 
 Based on a UI concept by Matt D. Smith.
 
+[Demo](https://digitalify.github.io/floatify/)
+
 ## Usage
 
 Include `jquery.floatify.js` and `jquery.floatify.css` to your page
 
 ```html
-<link rel="stylesheet" href="jquery.floatify.css" />
+<link href="jquery.floatify.css" rel="stylesheet" />
 
 <!-- floatify is jQuery plugin, so... -->
 <script src="jquery.js"></script>
