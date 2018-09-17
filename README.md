@@ -10,7 +10,7 @@ Include `jquery.floatify.js` and `jquery.floatify.css` to your page
 ```html
 <link rel="stylesheet" href="jquery.floatify.css" />
 
-<!-- checkify is jQuery plugin, so... -->
+<!-- floatify is jQuery plugin, so... -->
 <script src="jquery.js"></script>
 <script src="jquery.floatify.js"></script>
 ```
