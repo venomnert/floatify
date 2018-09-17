@@ -1,7 +1,6 @@
 (function ($, window, document, undefined) {
     const pluginName = 'floatify',
         p = {},
-        // -- Globals (shared across all plugin instances)
         defaults = {
             position: 'left',
             hGap: null
