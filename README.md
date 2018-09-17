@@ -19,24 +19,24 @@ Include `jquery.floatify.js` and `jquery.floatify.css` to your page
 
 Just normal HTML `input` tag with `placeholder`
 
-```
+```html
 <input type="text" placeholder="First name">
 ```
 
 ### JS
 
-```
+```js
 $('input').floatify({
-	// options
+  // options
 });
 ```
 
 ## Available options
 
-```
+```json
 {
-	position: 'left', // can be left or right
-	hGap: null // horizontal gap, can be any number or even string like '10px'
+  position: 'left', // can be left or right
+  hGap: null // horizontal gap, can be any number or even string like '10px'
 }
 ```
 
