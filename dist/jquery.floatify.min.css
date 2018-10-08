@@ -1,0 +1,9 @@
+/*!
+ * Floatify - A light-weight floating form label plugin for jQuery
+ *
+ * Copyright 2018, Mehdi Dehghani
+ *
+ * @author   Mehdi Dehghani (http://www.github.com/dehghani-mehdi)
+ * @license  Licensed under MIT (https://github.com/dehghani-mehdi/floatify/blob/master/LICENSE)
+ *
+ */.floatify{position:relative}.floatify .floatify__label{cursor:text;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:absolute;left:10px;top:10px;opacity:0;font-size:.8em;visibility:hidden;transition:opacity .2s;will-change:opacity;color:#0f7bc6;font-weight:400}.floatify .floatify__input{border:1px solid #ddd;border-radius:2px;padding:10px;width:100%}.floatify.floatify__active .floatify__label{opacity:1;visibility:visible;top:-10px;background-color:#fff;padding:2px 6px}.floatify.floatify__active .floatify__input{padding:12px 10px 8px}.floatify.floatify__right .floatify__label{left:auto;right:10px}

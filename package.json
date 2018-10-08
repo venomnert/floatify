@@ -1,15 +1,10 @@
 {
   "name": "floatify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A light-weight floating form label plugin for jQuery",
-  "main": "index.js",
   "scripts": {
-    "build": "npm run build:sass & npm run build:autoprefixer & npm run build:es6 & npm run build:js",
-    "build:sass": "node-sass src/scss/jquery.floatify.scss -o dist/",
-    "build:autoprefixer": "postcss dist/*.css -u autoprefixer -r --no-map",
-    "build:js": "uglifyjs --source-map -o dist/jquery.floatify.min.js -- dist/jquery.floatify.js",
-    "build:es6": "babel src/js -s -o dist/jquery.floatify.js --presets=env",
-    "babel:watch": "babel src/js -w -s -o dist/jquery.floatify.js --presets=env"
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": "webpack-dev-server --history-api-fallback --hot"
   },
   "repository": {
     "type": "git",
@@ -23,12 +18,23 @@
   "author": "Mehdi Dehghani",
   "license": "MIT",
   "devDependencies": {
-    "@types/jquery": "^3.3.4",
-    "autoprefixer": "^8.6.4",
+    "autoprefixer": "^8.6.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
-    "node-sass": "^4.9.1",
-    "postcss": "^7.0.2",
-    "postcss-cli": "^6.0.0",
-    "uglify-js": "^3.4.6"
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.0.0",
+    "unminified-webpack-plugin": "^2.0.0",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
   }
 }

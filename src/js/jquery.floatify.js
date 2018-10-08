@@ -1,9 +1,21 @@
+import '../scss/jquery.floatify.scss';
+
+/*!
+ * Floatify - A light-weight floating form label plugin for jQuery
+ *
+ * Copyright 2018, Mehdi Dehghani
+ *
+ * @author   Mehdi Dehghani (http://www.github.com/dehghani-mehdi)
+ * @license  Licensed under MIT (https://github.com/dehghani-mehdi/floatify/blob/master/LICENSE)
+ *
+ */
+
 (function ($, window, document, undefined) {
     const pluginName = 'floatify',
         p = {},
         defaults = {
             position: 'left',
-            hGap: null
+            hGap: 10
         };
 
     p[pluginName] = class {
